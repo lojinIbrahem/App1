@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './cta-action.component.scss'
 })
 export class CtaActionComponent {
+  @Input() backgraund:string="bg-white hover:bg-gray-100 text-blue-600 ";
   @Input() textColorTitle!: string 
   @Input() textColorParagraph!: string 
   @Input() bgClass!: string 

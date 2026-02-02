@@ -1,0 +1,72 @@
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <div *ngFor="let feature of features" 
+            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <img [src]="feature.imageUrl" alt="Cairo Metro Expansion Project" class="w-full h-64 object-cover">
+                <div class="p-8">
+                    <div class="inline-block bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium mb-3">
+                       {{ feature.tab }}
+                    </div>
+                    <h3 class="text-2xl mb-3">
+                       {{ feature.title }}
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+           {{ feature.paragraph }}
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-4 text-sm text-gray-600">
+                        <div class="flex items-center gap-2">
+         <i class="fa-regular fa-building  text-blue-600"></i>
+  <p>{{ feature.type }} </p> 
+                       </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-calendar text-blue-600"></i>
+  <p>{{ feature.date }}  </p>           
+            </div>
+                        <div class="flex items-center gap-2">
+                             <i class="fa-solid fa-location-dot text-blue-600 "></i>
+                         <p>  {{ feature.location }}</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-semibold mb-3">
+                            Key Results
+                        </h4>
+                        <ul class="space-y-2 text-xs">
+                            <li class="flex items-start gap-2">
+                                <div class="bg-green-100 text-green-600 rounded-full p-1 mt-0.5">
+                            <i class="fa-solid fa-check text-[10px] " ></i>
+                        </div>
+                                <span class="text-sm text-gray-600">
+                                    {{ feature.statement1 }}
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+         <div class="bg-green-100 text-green-600 rounded-full p-1 mt-0.5">
+                            <i class="fa-solid fa-check text-[10px] " ></i>                                </div>
+                                <span class="text-sm text-gray-600">
+                                    {{ feature.statement2 }}
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+         <div class="bg-green-100 text-green-600 rounded-full p-1 mt-0.5">
+                            <i class="fa-solid fa-check text-[10px] " ></i>                                </div>
+                                <span class="text-sm text-gray-600">
+                                    {{ feature.statement3 }}
+                            </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+         <div class="bg-green-100 text-green-600 rounded-full p-1 mt-0.5">
+                            <i class="fa-solid fa-check text-[10px] " ></i>                                </div><span class="text-sm text-gray-600">
+                                    {{ feature.statement4 }}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

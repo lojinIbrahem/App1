@@ -17,21 +17,25 @@ export class HomeComponent {
 paragraph=" Let's discuss how we can help you achieve your goals in Egypt"
 feature=[
   {
+    shape:'rounded-lg',
     icon: 'fa-solid fa-user-group',
     title: 'Expert Workforce',
     text: 'Access highly skilled professionals across multiple industries.'
   },
   {
+    shape:'rounded-lg',
     icon: 'fa-solid fa-bullseye',
     title: 'Project Management',
     text: 'End-to-end project oversight and execution.'
   },
   {
-    icon: 'fa-solid fa-check-circle',
+    shape:'rounded-lg',
+    icon: 'fa-solid fa-award',
     title: 'Quality Assurance',
     text: 'Rigorous quality control and compliance standards.'
   },
   {
+    shape:'rounded-lg',
     icon: 'fa-solid fa-bolt',
     title: 'Fast Deployment',
     text: 'Rapid mobilization and project kickoff.'

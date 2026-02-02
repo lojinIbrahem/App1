@@ -13,6 +13,7 @@ export class FeaturesSectionComponent {
 @Input() title!: string;
 @Input() description!: string;
 @Input() features: {
+  shape:string;
   icon: string;
   title: string;
   text: string;

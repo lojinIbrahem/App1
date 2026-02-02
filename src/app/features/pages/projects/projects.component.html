@@ -3,17 +3,23 @@
 [paragraphOverview]="'Delivering excellence across industries and bringing ambitious projects to life'"
 ></app-company-overview>
 
+<app-project-tab></app-project-tab>
+
+<app-projects-categories 
+
+[features]="feature"
+></app-projects-categories>
 
 
-
-<app-cta-action 
+<app-cta-action  
+[backgraund]="'bg-blue-600 hover:bg-blue-700 text-white'"
 [textColorTitle]="'text-black'"
 [textColorParagraph]="'text-gray-600'"
 [bgClass]="'bg-gray-50'"
  [title]="'Have a Project in Mind?'"
  [paragraphCTA]="paragraph"
  [linkurlCTS]="'/contact'"
- [linkCTA]="'start your project'"
+ [linkCTA]="'Start Your Project'"
 
  ></app-cta-action>
 
